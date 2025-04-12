@@ -21,5 +21,5 @@ EXPOSE 8501
 # ENV SCRAPINGBEE_API_KEY=your_api_key_here 
 # Note: It's better to pass secrets at runtime, not build time.
 
-# Run scrape_ui.py when the container launches
-CMD ["streamlit", "run", "scrape_ui.py"]
+# Run scrape_ui.py when the container launches, binding to all interfaces
+CMD ["streamlit", "run", "scrape_ui.py", "--server.port=8501", "--server.address=0.0.0.0"]
