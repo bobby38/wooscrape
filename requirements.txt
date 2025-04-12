@@ -1,0 +1,7 @@
+requests
+scrapingbee
+beautifulsoup4
+jmespath
+python-dotenv
+streamlit
+scrapy
